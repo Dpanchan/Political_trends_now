@@ -1,0 +1,15 @@
+install dependencies
+---------------------
+pip install -r requirements.txt
+
+start receiver
+--------------
+python frontend.py
+
+start event source
+------------------
+python events.py http://localhost:8080/event_sink
+get hot topics put it in graph
+------------------------------
+curl http://localhost:8080/hot-topics
+
